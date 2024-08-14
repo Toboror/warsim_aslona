@@ -1,0 +1,7 @@
+Welcome to my warsimlike!
+
+1. New game
+2. Load save
+3. Settings
+4. Credits
+5. Exit
