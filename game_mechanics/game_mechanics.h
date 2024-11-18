@@ -17,6 +17,7 @@ public:
     int player_gold;
     int player_renown;
     int player_age;
+    bool run_intro_text;
 
     game_mechanics();
 

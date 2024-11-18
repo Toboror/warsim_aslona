@@ -40,11 +40,15 @@ void press_any_button()
 
 game_mechanics::game_mechanics()
     : game_running(true), chosen_difficulty(false), name_chosen(false),
-      player_gold(50), player_renown(0), player_age(25) {}
+      player_gold(50), player_renown(0), player_age(25), run_intro_text(false) {}
 
 void game_mechanics::main_game_screen(game_mechanics &mechanics)
 {
-    cout_from_file("/Users/tobiasronningen/CLionProjects/untitled/main_game_screen_text/game_intro_text.txt");
+
+    if (mechanics.run_intro_text == false) {
+        cout_from_file("/Users/tobiasronningen/CLionProjects/untitled/main_game_screen_text/game_intro_text.txt");
+        mechanics.run_intro_text = true;
+    }
     press_any_button();
     cout << "----- Year xxx ------------------- Action menu -------------------"
          << "\nGold: " + to_string(mechanics.player_gold)

@@ -8,6 +8,7 @@ int main() {
 
     bool if_game_started = false;
     bool has_met_stranger = false;
+    bool in_tavern = true;
 
     while (mechanics.game_running)
     {
@@ -31,12 +32,27 @@ int main() {
             if_game_started = true;
         }
 
-        if (has_met_stranger == false) {
+switch (hub_events::hub_what_to_do(mechanics)) {
+    case 1:
+        while (in_tavern) {
+            if (hub_events::hub_tavern(mechanics) == 4) {
+                in_tavern = false;
+            }
+        }
+        break;
+    case 5:
+        if (!has_met_stranger) {
             hub_events::hub_stranger(mechanics);
             has_met_stranger = true;
         }
+        break;
+    case 0:
+        break;
+    default:
+        break;
+}
 
-        game_mechanics::main_game_screen(mechanics);
+game_mechanics::main_game_screen(mechanics);
 
         // Stops the game from looping to start menu becayse it is annoying.
         //mechanics.game_running = false;
