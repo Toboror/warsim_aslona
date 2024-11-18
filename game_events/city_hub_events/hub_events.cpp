@@ -1,6 +1,8 @@
 #include "hub_events.h"
 #include <iostream>
 
+#include "../../game_mechanics/jobs.h"
+
 void hub_events::hub_stranger(game_mechanics &mechanics) {
     std::cout << "You meet a stranger in the city hub. He looks like he has something important to say." << std::endl;
     std::cout << "Do you want to listen to him?"
@@ -79,6 +81,7 @@ int hub_events::hub_tavern(game_mechanics &mechanics) {
             if (user_input == 1) {
                 std::cout << "You take the job."
                              "\nYou have to collect 3 unpaid tabs." << std::endl;
+                jobs::collect_unpaid_tabs(mechanics);
             } else {
                 std::cout << "You do not take the job." << std::endl;
             }
@@ -90,22 +93,35 @@ int hub_events::hub_tavern(game_mechanics &mechanics) {
             std::cout << "You did not put in anything valid." << std::endl;
             break;
     }
-
+    return 0;
 }
 
 // Function for the player entering the casino.
-void hub_events::hub_casino(game_mechanics &mechanics) {
-
+int hub_events::hub_casino(game_mechanics &mechanics) {
+    return 0;
 }
 
 // Function for the player entering the market.
-void hub_events::hub_market(game_mechanics &mechanics) {
+int hub_events::hub_market(game_mechanics &mechanics) {
+
+    // Checking if it is the first time in the market in this iteration. If it is, print out the intro text.
+    static bool first_time_in_market = true;
+    if (first_time_in_market) {
+        std::cout << "You enter the market. The smell of fresh fruit and vegetables fills the air." << std::endl;
+        first_time_in_market = false;
+    }
+
+    return 0;
 
 }
 
 // Function if player decides to leave the hub. Returns an int to let the program know what to do.
 int hub_events::left_the_hub(game_mechanics &mechanics) {
 
+    std::cout << "You leave the city. Looking back over your shoulder you see run down buildings"
+                 "and sand blowing in the wind." << std::endl;
+
+    return 0;
 }
 
 int hub_events::hub_what_to_do(game_mechanics &mechanics){

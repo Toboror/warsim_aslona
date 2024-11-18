@@ -27,6 +27,7 @@ public:
     static void choose_name(game_mechanics &mechanics);
     static void settings();
     static void credits();
+    static void main_menu_what_to_do(game_mechanics &mechanics);
 };
 
 #endif // GAME_MECHANICS_H

@@ -1,7 +1,8 @@
 #include "game_mechanics.h"
 #include <iostream>
 #include <fstream>
-#include <ctime>
+
+#include "../game_events/city_hub_events/hub_events.h"
 
 using namespace std;
 
@@ -16,6 +17,52 @@ void cout_from_file(const string& txt_file_path)
     }
     cout << "-------------------------" << endl;
     readFile.close();
+}
+
+void game_mechanics::main_menu_what_to_do(game_mechanics &mechanics){
+
+    bool has_met_stranger = false;
+    bool in_tavern = true;
+    bool in_casino = true;
+    bool in_market = true;
+
+    switch (hub_events::hub_what_to_do(mechanics)) {
+    case 1:
+        while (in_tavern) {
+            if (hub_events::hub_tavern(mechanics) == 4) {
+                in_tavern = false;
+            }
+        }
+        break;
+    case 2:
+        while (in_casino) {
+            if (hub_events::hub_casino(mechanics) == 4) {
+                in_casino = false;
+            }
+        }
+        break;
+    case 3:
+        if (hub_events::left_the_hub(mechanics) == 0) {
+            break;
+        }
+    case 4:
+        while (in_market) {
+            if (hub_events::hub_market(mechanics) == 4) {
+                in_market = false;
+            }
+        }
+        break;
+    case 5:
+        if (!has_met_stranger) {
+            hub_events::hub_stranger(mechanics);
+            has_met_stranger = true;
+        }
+        break;
+    case 0:
+        break;
+    default:
+        break;
+    }
 }
 
 void go_back()
@@ -46,7 +93,7 @@ void game_mechanics::main_game_screen(game_mechanics &mechanics)
 {
 
     if (mechanics.run_intro_text == false) {
-        cout_from_file("/Users/tobiasronningen/CLionProjects/untitled/main_game_screen_text/game_intro_text.txt");
+        cout_from_file("../main_game_screen_text/game_intro_text.txt");
         mechanics.run_intro_text = true;
     }
     press_any_button();
@@ -59,7 +106,7 @@ void game_mechanics::main_game_screen(game_mechanics &mechanics)
 
 int game_mechanics::main_menu(game_mechanics &mechanics)
 {
-    cout_from_file("/Users/tobiasronningen/CLionProjects/untitled/main_menu_text/main_menu.txt");
+    cout_from_file("../main_menu_text/main_menu.txt");
 
     int user_input;
     cin >> user_input;
@@ -89,7 +136,7 @@ int game_mechanics::main_menu(game_mechanics &mechanics)
 
 void game_mechanics::start_new_game(game_mechanics &mechanics)
 {
-    cout_from_file("/Users/tobiasronningen/CLionProjects/untitled/main_menu_text/start_new_game/choose_difficulty.txt");
+    cout_from_file("../main_menu_text/start_new_game/choose_difficulty.txt");
 
     int user_input;
     cin >> user_input;
@@ -118,7 +165,7 @@ void game_mechanics::start_new_game(game_mechanics &mechanics)
 
 void game_mechanics::choose_name(game_mechanics &mechanics)
 {
-    cout_from_file("/Users/tobiasronningen/CLionProjects/untitled/main_menu_text/start_new_game/choose_name.txt");
+    cout_from_file("../main_menu_text/start_new_game/choose_name.txt");
     cin >> mechanics.user_name;
     cout << "Your chosen name is " + mechanics.user_name << endl;
     mechanics.name_chosen = true;
@@ -126,12 +173,12 @@ void game_mechanics::choose_name(game_mechanics &mechanics)
 
 void game_mechanics::settings()
 {
-    cout_from_file("/Users/tobiasronningen/CLionProjects/untitled/main_menu_text/settings.txt");
+    cout_from_file("../main_menu_text/settings.txt");
     go_back();
 }
 
 void game_mechanics::credits()
 {
-    cout_from_file("/Users/tobiasronningen/CLionProjects/untitled/main_menu_text/credits.txt");
+    cout_from_file("../main_menu_text/credits.txt");
     go_back();
 }
