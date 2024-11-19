@@ -1,4 +1,3 @@
-#include "game_events/city_hub_events/hub_events.h"
 #include "game_mechanics/game_mechanics.h"
 
 int main() {

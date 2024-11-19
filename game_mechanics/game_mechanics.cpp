@@ -4,6 +4,10 @@
 
 #include "../game_events/city_hub_events/hub_events.h"
 
+/*TODO
+ * Bug when starting the program the main game menu displays twice.
+*/
+
 using namespace std;
 
 void cout_from_file(const string& txt_file_path)
@@ -25,6 +29,8 @@ void game_mechanics::main_menu_what_to_do(game_mechanics &mechanics){
     bool in_tavern = true;
     bool in_casino = true;
     bool in_market = true;
+
+    main_game_screen(mechanics);
 
     switch (hub_events::hub_what_to_do(mechanics)) {
     case 1:
@@ -53,10 +59,7 @@ void game_mechanics::main_menu_what_to_do(game_mechanics &mechanics){
         }
         break;
     case 5:
-        if (!has_met_stranger) {
-            hub_events::hub_stranger(mechanics);
-            has_met_stranger = true;
-        }
+        hub_events::choose_random_hub_event(mechanics);
         break;
     case 0:
         break;

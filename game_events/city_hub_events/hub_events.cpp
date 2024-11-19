@@ -1,7 +1,10 @@
 #include "hub_events.h"
 #include <iostream>
+#include <list>
 
 #include "../../game_mechanics/jobs.h"
+
+bool static jobs_finished_tabs = false;
 
 void hub_events::hub_stranger(game_mechanics &mechanics) {
     std::cout << "You meet a stranger in the city hub. He looks like he has something important to say." << std::endl;
@@ -39,6 +42,54 @@ void hub_events::hub_stranger(game_mechanics &mechanics) {
     }
 }
 
+void hub_events::hub_mercenary(game_mechanics &mechanics){
+
+    std::cout << "You meet a mercenary in the city hub. He looks like he has something important to say."
+                 "\nMercenary: Hey, you looks like someone who needs a sword for hire."
+                 " What about it? Want to hire me?" << std::endl;
+    std::cout << "1. Hire the mercenary (300g)."
+                 "\n2. Do not hire the mercenary." << std::endl;
+
+    int user_input;
+    std::cin >> user_input;
+
+    switch (user_input) {
+    case 1:
+        if (mechanics.player_gold >= 300) {
+            std::cout << "You hire the mercenary."
+                         "\nYou have a new companion." << std::endl;
+            mechanics.player_gold -= 300;
+        } else {
+            std::cout << "You do not have enough gold to hire the mercenary." << std::endl;
+        }
+    case 2:
+        std::cout << "You decide not hire the mercenary." << std::endl;
+    }
+
+}
+
+void hub_events::choose_random_hub_event(game_mechanics &mechanics) {
+
+    // List with amount of events in the hub. Will have one more event for nothing happening.
+    std::list<int> hub_events_list = {1, 2, 3};
+
+    // Chooses a random number from the list and returns the value.
+    int random_event = rand() % hub_events_list.size();
+
+    switch (random_event) {
+    case 0:
+        hub_stranger(mechanics);
+        break;
+    case 1:
+        hub_mercenary(mechanics);
+        break;
+    case 2:
+        std::cout << "You walk around the city hub. Nothing happens." << std::endl;
+        break;
+    }
+}
+
+
 // Function for the player entering the tavern.
 int hub_events::hub_tavern(game_mechanics &mechanics) {
 
@@ -70,18 +121,36 @@ int hub_events::hub_tavern(game_mechanics &mechanics) {
             std::cout << "You talk to others."
                          "\nThey tell you of a strange man walking around town." << std::endl;
             break;
-        case 3:
-            std::cout << "You look for jobs."
-                         "\nThe inkeep tells you he needs help with collecting some unpaid tabs."
-                         "\nYou want to take the job?"
-                         "\n1. Yes."
-                         "\n2. No." << std::endl;
+    case 3:
+            if (!jobs_finished_tabs) {
+                std::cout << "You look for jobs."
+                             "\nThe inkeep tells you he needs help with collecting some unpaid tabs."
+                             "\nYou want to take the job?"
+                             "\n1. Yes."
+                             "\n2. No." << std::endl;
+            } else if (jobs_finished_tabs) {
+                std::cout << "Do you want to give the innkeep the tabs?"
+              "\n1. Yes"
+              "\n2. No" << std::endl;
+                int user_input2;
+                std::cin >> user_input2;
+                if (user_input == 1) {
+                    std::cout << "You pay back the innkeep."
+                                 "\nYou pay " + jobs::collect_unpaid_tabs(mechanics) << std::endl;
+                    mechanics.player_gold -= jobs::collect_unpaid_tabs(mechanics);
+                    mechanics.player_renown += 8;
+                } else
+                    std::cout << "You do not pay back the innkeep and keep the money" << std::endl;
+                mechanics.player_renown -= 15;
+            }
             int user_input;
             std::cin >> user_input;
             if (user_input == 1) {
                 std::cout << "You take the job."
                              "\nYou have to collect 3 unpaid tabs." << std::endl;
-                jobs::collect_unpaid_tabs(mechanics);
+                if (jobs::collect_unpaid_tabs(mechanics) == 1) {
+                    jobs_finished_tabs = true;
+                }
             } else {
                 std::cout << "You do not take the job." << std::endl;
             }
@@ -127,7 +196,7 @@ int hub_events::left_the_hub(game_mechanics &mechanics) {
 int hub_events::hub_what_to_do(game_mechanics &mechanics){
 
     // Prompting the player on what to do once in the Hub.
-    std::cout << "You are in the Hub. What would you like to do?"
+    std::cout << "\nYou are in the Hub. What would you like to do?"
                  "\n1. Enter the tavern."
                  "\n2. Enter the casino."
                  "\n3. Leave the city."

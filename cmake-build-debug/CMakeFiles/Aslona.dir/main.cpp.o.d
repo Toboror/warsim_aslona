@@ -1,6 +1,5 @@
 CMakeFiles/Aslona.dir/main.cpp.o: \
   /Users/tobiasronningen/CLionProjects/Aslona/main.cpp \
-  /Users/tobiasronningen/CLionProjects/Aslona/game_events/city_hub_events/hub_events.h \
   /Users/tobiasronningen/CLionProjects/Aslona/game_mechanics/game_mechanics.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/max.h \

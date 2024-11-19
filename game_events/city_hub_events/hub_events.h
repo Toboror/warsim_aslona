@@ -7,6 +7,15 @@ namespace hub_events {
     void hub_stranger(game_mechanics &mechanics);
 }
 
+namespace hub_events
+{
+    void hub_mercenary(game_mechanics &mechanics);
+}
+
+namespace hub_events
+{
+    void choose_random_hub_event(game_mechanics &mechanics);
+}
 namespace hub_events {
     int hub_what_to_do(game_mechanics &mechanics);
 }
@@ -23,7 +32,8 @@ namespace hub_events {
     int hub_market(game_mechanics &mechanics);
 }
 
-namespace hub_events {
+namespace hub_events
+{
     int left_the_hub(game_mechanics &mechanics);
 }
 
