@@ -2,11 +2,7 @@
 #include <iostream>
 #include <fstream>
 
-#include "../game_events/city_hub_events/hub_events.h"
-
-/*TODO
- * Bug when starting the program the main game menu displays twice.
-*/
+#include "../Cities/CityHub/hub_events.h"
 
 using namespace std;
 
@@ -119,7 +115,7 @@ int game_mechanics::main_menu(game_mechanics &mechanics)
         cout << "You did not put in anything valid" << endl;
         break;
     case 1:
-        start_new_game(mechanics);
+        chooseDifficulty(mechanics);
         break;
     case 2:
         cout << "Running 2!" << endl;
@@ -137,7 +133,7 @@ int game_mechanics::main_menu(game_mechanics &mechanics)
     return 0;
 }
 
-void game_mechanics::start_new_game(game_mechanics &mechanics)
+void game_mechanics::chooseDifficulty(game_mechanics &mechanics)
 {
     cout_from_file("../main_menu_text/start_new_game/choose_difficulty.txt");
 

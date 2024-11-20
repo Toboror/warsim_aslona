@@ -1,0 +1,6 @@
+# ninja log v6
+1	358	1732027696348778300	CMakeFiles/Aslona.dir/main.cpp.o	2588a96c37689ef6
+516	552	1732027696864240717	Aslona	219dfcca89c9a149
+2	457	1732027696349458666	CMakeFiles/Aslona.dir/game_events/city_hub_events/hub_events.cpp.o	fb59a53c0522ace4
+1	459	1732027696349224086	CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o	d718f3666144e876
+3	516	1732027696351021187	CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o	a04cdd0d8f27479e

@@ -1,0 +1,24 @@
+<changelist name="Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1" date="1732025789482" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 19/11/2024, 15:16 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/jobs.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/Aslona" />
+    <option name="AFTER_PATH" value="cmake-build-debug/Aslona" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/Aslona" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/Aslona.dir/main.cpp.o" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/Aslona.dir/main.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/main.cpp.o" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o" />
+    <option name="AFTER_PATH" value="cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/game_mechanics.cpp.o" />
+  </binary>
+</changelist>
