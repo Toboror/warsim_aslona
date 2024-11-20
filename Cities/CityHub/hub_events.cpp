@@ -59,41 +59,6 @@ void hub_events::choose_random_hub_event(game_mechanics &mechanics) {
 // Function for the player entering the tavern.
 int hub_events::hub_tavern(game_mechanics &mechanics) {
 
-            } else if (jobs_finished_tabs) {
-                std::cout << "Do you want to give the innkeep the tabs?"
-              "\n1. Yes"
-              "\n2. No" << std::endl;
-                int user_input2;
-                std::cin >> user_input2;
-                if (user_input == 1) {
-                    std::cout << "You pay back the innkeep."
-                                 "\nYou pay " + jobs::collect_unpaid_tabs(mechanics) << std::endl;
-                    mechanics.player_gold -= jobs::collect_unpaid_tabs(mechanics);
-                    mechanics.player_renown += 8;
-                } else
-                    std::cout << "You do not pay back the innkeep and keep the money" << std::endl;
-                mechanics.player_renown -= 15;
-            }
-            int user_input;
-            std::cin >> user_input;
-            if (user_input == 1) {
-                std::cout << "You take the job."
-                             "\nYou have to collect 3 unpaid tabs." << std::endl;
-                if (jobs::collect_unpaid_tabs(mechanics) == 1) {
-                    jobs_finished_tabs = true;
-                }
-            } else {
-                std::cout << "You do not take the job." << std::endl;
-            }
-            break;
-        case 4:
-            std::cout << "You leave the tavern." << std::endl;
-            return 4;
-        default:
-            std::cout << "You did not put in anything valid." << std::endl;
-            break;
-    }
-    return 0;
 }
 
 // Function for the player entering the casino.

@@ -85,6 +85,12 @@ build CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernInstance.
   OBJECT_DIR = CMakeFiles/Aslona.dir
   OBJECT_FILE_DIR = CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern
 
+build CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernJobs/Jobs.cpp.o: CXX_COMPILER__Aslona_unscanned_Debug /Users/tobiasronningen/CLionProjects/Aslona/Cities/CityHub/Establishments/Tavern/TavernJobs/Jobs.cpp || cmake_object_order_depends_target_Aslona
+  DEP_FILE = CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernJobs/Jobs.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Aslona.dir
+  OBJECT_FILE_DIR = CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernJobs
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Aslona
@@ -93,7 +99,7 @@ build CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernInstance.
 #############################################
 # Link the executable Aslona
 
-build Aslona: CXX_EXECUTABLE_LINKER__Aslona_Debug CMakeFiles/Aslona.dir/main.cpp.o CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/hub_events.cpp.o CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Events/StrangerEvent/StrangerEvent.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernInstance.cpp.o
+build Aslona: CXX_EXECUTABLE_LINKER__Aslona_Debug CMakeFiles/Aslona.dir/main.cpp.o CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/hub_events.cpp.o CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Events/StrangerEvent/StrangerEvent.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernInstance.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernJobs/Jobs.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/Aslona.dir
   POST_BUILD = :

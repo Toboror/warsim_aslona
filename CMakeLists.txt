@@ -10,4 +10,6 @@ add_executable(Aslona main.cpp
         Cities/CityHub/Events/StrangerEvent/StrangerEvent.cpp
         Cities/CityHub/Events/StrangerEvent/StrangerEvent.h
         Cities/CityHub/Establishments/Tavern/TavernInstance.cpp
-        Cities/CityHub/Establishments/Tavern/TavernInstance.h)
+        Cities/CityHub/Establishments/Tavern/TavernInstance.h
+        Cities/CityHub/Establishments/Tavern/TavernJobs/Jobs.cpp
+        Cities/CityHub/Establishments/Tavern/TavernJobs/Jobs.h)

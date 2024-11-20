@@ -8,6 +8,7 @@
 #include <list>
 
 #include "../../../../game_mechanics/game_mechanics.h"
+#include "../../../../game_mechanics/jobs.h"
 
 using namespace std;
 
@@ -82,10 +83,35 @@ int lookForJobs(game_mechanics &mechanics){
 
     list<string> jobs{"Collect debts", "Help the locals"};
 
-    cout << "You decide to look for jobs on the bulletin board." << endl;
+    bool jobTaken = false;
+
+    while (!jobTaken) {
+
+        cout << "You decide to look for jobs on the bulletin board." << endl;
+        cout << "The jobs are: " << endl;
+
+        int counter = 1;
+
+        for (string job : jobs) {
+            cout << to_string(counter) << ". " << job << ", " << endl;
+            counter++;
+        }
+
+        cout << "Which job do you want?" << endl;
+
+        int user_input;
+        cin >> user_input;
+
+        switch (user_input) {
+
+        }
+
+    }
 
 }
 
-int leaveTavern(game_mechanics &mechanics){
+void leaveTavern(game_mechanics &mechanics){
+
+    cout << "You decide to leave the tavern." << endl;
 
 }
