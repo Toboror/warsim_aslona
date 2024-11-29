@@ -1,27 +1,20 @@
-//
-// Created by Tobias Rønningen on 20/11/2024.
-//
-
+// In TavernInstance.h
 #ifndef TAVERNINSTANCE_H
 #define TAVERNINSTANCE_H
 
-
-class game_mechanics;
+#include "../../../../game_mechanics/game_mechanics.h"
 
 class TavernInstance {
 public:
 
     TavernInstance();
 
-    void enterTavern(game_mechanics &mechanics);
-    void whatToDoTavern(game_mechanics &mechanics);
-    void buyADrink(game_mechanics &mechanics);
-    void talkToclientele(game_mechanics &mechanics);
-    void lookForJobs(game_mechanics &mechanics);
-    int leaveTavern(game_mechanics &mechanics);
-
+    static void leaveTavern(game_mechanics &mechanics);
+    static int lookForJobs(game_mechanics &mechanics);
+    static void talkToclientele(game_mechanics &mechanics);
+    static void buyADrink(game_mechanics &mechanics);
+    static void whatToDoTavern(game_mechanics &mechanics);
+    static void enterTavern(game_mechanics &mechanics);
 };
 
-
-
-#endif //TAVERNINSTANCE_H
+#endif // TAVERNINSTANCE_H

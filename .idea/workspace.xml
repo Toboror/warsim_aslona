@@ -20,48 +20,29 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14f912a3-399d-4380-bf98-5d1e74e5f5dc" name="Changes" comment="Changed some stuff">
+    <list default="true" id="14f912a3-399d-4380-bf98-5d1e74e5f5dc" name="Changes" comment="Added more methods to the TavernInstance.cpp">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/Aslona" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/game_mechanics.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/jobs.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024__15_16__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cities/CityHub/Establishments/Tavern/TavernInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/Establishments/Tavern/TavernInstance.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cities/CityHub/Establishments/Tavern/TavernInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/Establishments/Tavern/TavernInstance.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cities/CityHub/Events/StrangerEvent/StrangerEvent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/Events/StrangerEvent/StrangerEvent.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cities/CityHub/hub_events.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/hub_events.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cities/CityHub/hub_events.h" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/hub_events.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Aslona" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Aslona" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.31.0/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.31.0/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.31.0/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.31.0/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.31.0/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.31.0/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.31.0/CompilerIdC/CMakeCCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.31.0/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.31.0/CompilerIdCXX/CMakeCXXCompilerId.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/compiler_depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/compiler_depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/compiler_depend.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_events/city_hub_events/hub_events.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_events/city_hub_events/hub_events.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_events/city_hub_events/hub_events.cpp.o.d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o.d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/link.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/main.cpp.o.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_events/city_hub_events/hub_events.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/hub_events.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_events/city_hub_events/hub_events.h" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/hub_events.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_mechanics/game_mechanics.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/game_mechanics/game_mechanics.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_mechanics/game_mechanics.h" beforeDir="false" afterPath="$PROJECT_DIR$/game_mechanics/game_mechanics.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,6 +86,12 @@
     <setting file="file://$PROJECT_DIR$/Cities/CityHub/Events/StrangerEvent/StrangerEvent.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cities/CityHub/hub_events.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Cities/CityHub/hub_events.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Entities/Enemy/Enemy.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Entities/Enemy/Enemy.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Entities/Item/Item.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Entities/Item/Item.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Entities/Player/Player.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Entities/Player/Player.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/game_mechanics/game_mechanics.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/game_mechanics/game_mechanics.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/game_mechanics/jobs.cpp" root0="FORCE_HIGHLIGHTING" />
@@ -147,19 +134,20 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Entities/Item" />
+      <recent name="$PROJECT_DIR$/Entities/Enemy" />
+      <recent name="$PROJECT_DIR$/Entities/Player" />
       <recent name="$PROJECT_DIR$/Cities/CityHub/Events" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/main_menu_text/start_new_game" />
-      <recent name="$PROJECT_DIR$/main_menu_text" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="Aslona" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Aslona" TARGET_NAME="Aslona" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Aslona" RUN_TARGET_NAME="Aslona">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Aslona" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Aslona" TARGET_NAME="Aslona" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Aslona" RUN_TARGET_NAME="Aslona">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -198,7 +186,13 @@
       <workItem from="1732027640506" duration="204000" />
       <workItem from="1732110907326" duration="37000" />
       <workItem from="1732110998609" duration="34000" />
-      <workItem from="1732118700512" duration="3573000" />
+      <workItem from="1732118700512" duration="4883000" />
+      <workItem from="1732211485370" duration="299000" />
+      <workItem from="1732279977245" duration="23000" />
+      <workItem from="1732448494637" duration="26000" />
+      <workItem from="1732454028309" duration="1076000" />
+      <workItem from="1732535414871" duration="3511000" />
+      <workItem from="1732902167765" duration="4009000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -248,7 +242,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732024548606</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Rearranged the structure of the program making it more readable and modifiable.">
+      <option name="closed" value="true" />
+      <created>1732122309965</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732122309965</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added more methods to the TavernInstance.cpp">
+      <option name="closed" value="true" />
+      <created>1732123058259</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732123058259</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +297,8 @@
     <MESSAGE value="Added tavern event for the hub." />
     <MESSAGE value="Added README.&#10;Made some name changes and bug fixes." />
     <MESSAGE value="Changed some stuff" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed some stuff" />
+    <MESSAGE value="Rearranged the structure of the program making it more readable and modifiable." />
+    <MESSAGE value="Added more methods to the TavernInstance.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added more methods to the TavernInstance.cpp" />
   </component>
 </project>

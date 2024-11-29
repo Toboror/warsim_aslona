@@ -12,18 +12,20 @@
 
 using namespace std;
 
+TavernInstance::TavernInstance() = default;
+
 // The price for a drink at the Tavern.
 int priceForADrink = 5;
 
 // Method for entering the tavern.
-void enterTavern(game_mechanics &mechanics){
+void TavernInstance::enterTavern(game_mechanics &mechanics){
 
     cout << "You enter the tavern." << endl;
 
 }
 
 // Method for choosing what to do in the Tavern.
-void whatToDoTavern(game_mechanics &mechanics){
+void TavernInstance::whatToDoTavern(game_mechanics &mechanics){
     cout <<
              "\nWhat would you like to do?"
              "\n1. Buy a drink " << "(" << to_string(priceForADrink) << ")." <<
@@ -64,7 +66,7 @@ void whatToDoTavern(game_mechanics &mechanics){
 }
 
 // Method for when the player decides to buy a drink.
-void buyADrink(game_mechanics &mechanics){
+void TavernInstance::buyADrink(game_mechanics &mechanics){
 
     cout << "You decide to buy a drink. It is refreshing " << "(" << to_string(priceForADrink) << ")." << endl;
     mechanics.player_gold -= priceForADrink;
@@ -72,45 +74,21 @@ void buyADrink(game_mechanics &mechanics){
 }
 
 // Method for talking to the clientele of the tavern.
-void talkToclientele(game_mechanics &mechanics){
+void TavernInstance::talkToclientele(game_mechanics &mechanics){
 
     cout << "You decide to talk to the other clientele."
             "\nThey tell you of a strange man wandering the streets of the Hub." << endl;
 
 }
 
-int lookForJobs(game_mechanics &mechanics){
+int TavernInstance::lookForJobs(game_mechanics &mechanics){
 
-    list<string> jobs{"Collect debts", "Help the locals"};
-
-    bool jobTaken = false;
-
-    while (!jobTaken) {
-
-        cout << "You decide to look for jobs on the bulletin board." << endl;
-        cout << "The jobs are: " << endl;
-
-        int counter = 1;
-
-        for (string job : jobs) {
-            cout << to_string(counter) << ". " << job << ", " << endl;
-            counter++;
-        }
-
-        cout << "Which job do you want?" << endl;
-
-        int user_input;
-        cin >> user_input;
-
-        switch (user_input) {
-
-        }
-
-    }
+    vector<string> jobs = {"Collects debts", "Help the locals"};
+    return 0;
 
 }
 
-void leaveTavern(game_mechanics &mechanics){
+void TavernInstance::leaveTavern(game_mechanics &mechanics){
 
     cout << "You decide to leave the tavern." << endl;
 

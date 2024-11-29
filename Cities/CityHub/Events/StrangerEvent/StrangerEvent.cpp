@@ -6,7 +6,7 @@
 
 #include <iostream>
 
-#include "../../../game_mechanics/game_mechanics.h"
+#include "../../../../game_mechanics/game_mechanics.h"
 
 class game_mechanics;
 using namespace std;

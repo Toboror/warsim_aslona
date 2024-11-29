@@ -91,6 +91,30 @@ build CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernJobs/Jobs
   OBJECT_DIR = CMakeFiles/Aslona.dir
   OBJECT_FILE_DIR = CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernJobs
 
+build CMakeFiles/Aslona.dir/Entities/Player/Player.cpp.o: CXX_COMPILER__Aslona_unscanned_Debug /Users/tobiasronningen/CLionProjects/Aslona/Entities/Player/Player.cpp || cmake_object_order_depends_target_Aslona
+  DEP_FILE = CMakeFiles/Aslona.dir/Entities/Player/Player.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Aslona.dir
+  OBJECT_FILE_DIR = CMakeFiles/Aslona.dir/Entities/Player
+
+build CMakeFiles/Aslona.dir/Entities/Enemy/Enemy.cpp.o: CXX_COMPILER__Aslona_unscanned_Debug /Users/tobiasronningen/CLionProjects/Aslona/Entities/Enemy/Enemy.cpp || cmake_object_order_depends_target_Aslona
+  DEP_FILE = CMakeFiles/Aslona.dir/Entities/Enemy/Enemy.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Aslona.dir
+  OBJECT_FILE_DIR = CMakeFiles/Aslona.dir/Entities/Enemy
+
+build CMakeFiles/Aslona.dir/Entities/Inventory/Inventory.cpp.o: CXX_COMPILER__Aslona_unscanned_Debug /Users/tobiasronningen/CLionProjects/Aslona/Entities/Inventory/Inventory.cpp || cmake_object_order_depends_target_Aslona
+  DEP_FILE = CMakeFiles/Aslona.dir/Entities/Inventory/Inventory.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Aslona.dir
+  OBJECT_FILE_DIR = CMakeFiles/Aslona.dir/Entities/Inventory
+
+build CMakeFiles/Aslona.dir/Entities/Item/Item.cpp.o: CXX_COMPILER__Aslona_unscanned_Debug /Users/tobiasronningen/CLionProjects/Aslona/Entities/Item/Item.cpp || cmake_object_order_depends_target_Aslona
+  DEP_FILE = CMakeFiles/Aslona.dir/Entities/Item/Item.cpp.o.d
+  FLAGS = -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Aslona.dir
+  OBJECT_FILE_DIR = CMakeFiles/Aslona.dir/Entities/Item
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Aslona
@@ -99,7 +123,7 @@ build CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernJobs/Jobs
 #############################################
 # Link the executable Aslona
 
-build Aslona: CXX_EXECUTABLE_LINKER__Aslona_Debug CMakeFiles/Aslona.dir/main.cpp.o CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/hub_events.cpp.o CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Events/StrangerEvent/StrangerEvent.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernInstance.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernJobs/Jobs.cpp.o
+build Aslona: CXX_EXECUTABLE_LINKER__Aslona_Debug CMakeFiles/Aslona.dir/main.cpp.o CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/hub_events.cpp.o CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Events/StrangerEvent/StrangerEvent.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernInstance.cpp.o CMakeFiles/Aslona.dir/Cities/CityHub/Establishments/Tavern/TavernJobs/Jobs.cpp.o CMakeFiles/Aslona.dir/Entities/Player/Player.cpp.o CMakeFiles/Aslona.dir/Entities/Enemy/Enemy.cpp.o CMakeFiles/Aslona.dir/Entities/Inventory/Inventory.cpp.o CMakeFiles/Aslona.dir/Entities/Item/Item.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk
   OBJECT_DIR = CMakeFiles/Aslona.dir
   POST_BUILD = :

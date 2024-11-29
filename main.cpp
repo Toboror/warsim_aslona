@@ -1,3 +1,7 @@
+#include "Cities/CityHub/Establishments/Tavern/TavernInstance.h"
+#include "Entities/Enemy/Enemy.h"
+#include "Entities/Inventory/Inventory.h"
+#include "Entities/Item/Item.h"
 #include "game_mechanics/game_mechanics.h"
 
 int main() {
@@ -7,7 +11,7 @@ int main() {
 
     bool if_game_started = false;
 
-    while (mechanics.game_running) {
+    /*while (mechanics.game_running) {
         if (!if_game_started) {
             switch (game_mechanics::main_menu(mechanics)) {
             case 5:
@@ -26,7 +30,10 @@ int main() {
         } else {
             game_mechanics::main_menu_what_to_do(mechanics);
         }
-    }
+    }*/
+
+    Enemy newEnemy;
+    newEnemy.enemyDropTable();
 
     return 0;
 }

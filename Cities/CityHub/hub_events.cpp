@@ -44,7 +44,6 @@ void hub_events::choose_random_hub_event(game_mechanics &mechanics) {
 
     switch (random_event) {
     case 0:
-        hub_stranger(mechanics);
         break;
     case 1:
         hub_mercenary(mechanics);
@@ -58,7 +57,7 @@ void hub_events::choose_random_hub_event(game_mechanics &mechanics) {
 
 // Function for the player entering the tavern.
 int hub_events::hub_tavern(game_mechanics &mechanics) {
-
+    return 0;
 }
 
 // Function for the player entering the casino.
