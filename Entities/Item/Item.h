@@ -10,10 +10,9 @@
 class Item {
 public:
     std::string name;
-    int damage;
+    int damage{};
 
-    Item();
-
+Item(const std::string& name, int damage) : name(name), damage(damage) {}
     static void generateItem();
 
 };

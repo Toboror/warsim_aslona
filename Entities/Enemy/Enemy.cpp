@@ -6,6 +6,8 @@
 
 #include <unordered_map>
 
+#include "../Item/Item.h"
+
 /*Method for when enemy is defeated.
  *Currently only prints defeated message with the enemy name.
  *Returns nothing, but will eventually modify player level, gold etc.
@@ -35,9 +37,8 @@ void Enemy::enemyVictorious(){
  * Returns the damage the enemy is supposed to do against the player.
  */
 int Enemy::calculateEnemyDamage(int enemyAttackPoints, int enemyLevel){
-    int calculatedDamage = 0;
 
-    calculatedDamage = enemyAttackPoints * (enemyLevel*3);
+    int calculatedDamage = enemyAttackPoints * (enemyLevel*3);
 
     return calculatedDamage;
 }
@@ -54,28 +55,32 @@ std::string Enemy::enemyDropTable(){
 
     /*
      * TODO
-     * Currently the loot table always drops legendary sword.
+     * Currently the loot table always drops common sword.
      * It is supposed to generate a random number, and then return
      * the corresponding string from the HashMap.
      */
 
     std::string lootToBeDropped;
-    std::unordered_map<int, std::string> enemyLoot;
 
-    enemyLoot[0] = "Common Sword";
-    enemyLoot[11] = "Uncommon Sword";
-    enemyLoot[19] = "Rare Sword";
-    enemyLoot[26] = "Legendary Sword";;
+    std::unordered_map<int, std::string> enemyLoot = {
+        {0, "Common Sword"}, {1, "Common Mace"}, {2, "Common Bow"}, {3, "Common Dagger"}, {4, "Common Axe"},
+        {5, "Common Spear"}, {6, "Common Hammer"}, {7, "Common Staff"}, {8, "Common Crossbow"}, {9, "Common Scythe"},
+        {10, "Common Flail"}, {11, "Uncommon Sword"}, {12, "Uncommon Mace"}, {13, "Uncommon Bow"}, {14, "Uncommon Dagger"},
+        {15, "Uncommon Axe"}, {16, "Uncommon Spear"}, {17, "Uncommon Hammer"}, {18, "Uncommon Staff"}, {19, "Rare Sword"},
+        {20, "Rare Mace"}, {21, "Rare Bow"}, {22, "Rare Dagger"}, {23, "Rare Axe"}, {24, "Rare Spear"},
+        {25, "Rare Hammer"}, {26, "Legendary Sword"}, {27, "Legendary Mace"}, {28, "Legendary Bow"}, {29, "Legendary Dagger"},
+        {30, "Legendary Axe"}
+    };
 
-    auto it = enemyLoot.begin();
+    int randomNum = rand() % 31; // Generate a random number between 0 and 30
 
-    if (enemyLoot.size() > 1) {
-        ++it;
-    }
-
+    auto it = enemyLoot.find(randomNum);
     if (it != enemyLoot.end()) {
-        lootToBeDropped=it->second;
-        std::cout << "You got a " << lootToBeDropped << std::endl;
+        lootToBeDropped = it->second;
+    } else {
+        lootToBeDropped = "No loot"; // Default case if no loot is found
     }
+
+    std::cout << "You got a " << lootToBeDropped << std::endl;
     return lootToBeDropped;
 }

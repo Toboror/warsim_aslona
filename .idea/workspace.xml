@@ -20,25 +20,24 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14f912a3-399d-4380-bf98-5d1e74e5f5dc" name="Changes" comment="Added more methods to the TavernInstance.cpp">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/Aslona" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/game_mechanics.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/jobs.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024,_15_16_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_19_11_2024__15_16__Changes_1.xml" beforeDir="false" />
+    <list default="true" id="14f912a3-399d-4380-bf98-5d1e74e5f5dc" name="Changes" comment="Added methods for the Enemy class.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cities/CityHub/Establishments/Tavern/TavernInstance.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/Establishments/Tavern/TavernInstance.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cities/CityHub/Establishments/Tavern/TavernInstance.h" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/Establishments/Tavern/TavernInstance.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cities/CityHub/Events/StrangerEvent/StrangerEvent.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/Events/StrangerEvent/StrangerEvent.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cities/CityHub/hub_events.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/hub_events.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cities/CityHub/hub_events.h" beforeDir="false" afterPath="$PROJECT_DIR$/Cities/CityHub/hub_events.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/Enemy/Enemy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Enemy/Enemy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/Enemy/Enemy.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Enemy/Enemy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/Item/Item.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Item/Item.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/Item/Item.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Item/Item.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/Player/Player.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Player/Player.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/Player/Player.h" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Player/Player.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-76b8df23824dced68584.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-11-25T12-39-48-0200.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Aslona-Debug-10c519df813c3f909651.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Aslona" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Aslona" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/game_mechanics.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/game_mechanics/jobs.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/Entities/Enemy/Enemy.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/Entities/Enemy/Enemy.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/Entities/Item/Item.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/Entities/Item/Item.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/Entities/Player/Player.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/Entities/Player/Player.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Aslona.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
@@ -147,11 +146,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -192,7 +186,13 @@
       <workItem from="1732448494637" duration="26000" />
       <workItem from="1732454028309" duration="1076000" />
       <workItem from="1732535414871" duration="3511000" />
-      <workItem from="1732902167765" duration="4009000" />
+      <workItem from="1732902167765" duration="4814000" />
+      <workItem from="1733064495471" duration="3363000" />
+      <workItem from="1733219521267" duration="2559000" />
+      <workItem from="1733245047333" duration="19000" />
+      <workItem from="1733246079683" duration="228000" />
+      <workItem from="1733412192950" duration="1361000" />
+      <workItem from="1733413894255" duration="1999000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -258,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732123058259</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added methods for the Enemy class.">
+      <option name="closed" value="true" />
+      <created>1732906482032</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732906482032</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +307,7 @@
     <MESSAGE value="Changed some stuff" />
     <MESSAGE value="Rearranged the structure of the program making it more readable and modifiable." />
     <MESSAGE value="Added more methods to the TavernInstance.cpp" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added more methods to the TavernInstance.cpp" />
+    <MESSAGE value="Added methods for the Enemy class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added methods for the Enemy class." />
   </component>
 </project>

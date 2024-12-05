@@ -20,4 +20,8 @@ add_executable(Aslona main.cpp
         Entities/Inventory/Inventory.cpp
         Entities/Inventory/Inventory.h
         Entities/Item/Item.cpp
-        Entities/Item/Item.h)
+        Entities/Item/Item.h
+        Entities/NPC/NPCtemplate.cpp
+        Entities/NPC/NPCtemplate.h
+        Entities/NPC/HubNPC/OldLady.cpp
+        Entities/NPC/HubNPC/OldLady.h)

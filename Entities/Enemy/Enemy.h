@@ -6,16 +6,24 @@
 #define ENEMY_H
 
 #include <iostream>
+#include <utility>
 
 class Enemy {
-protected:
+
+
+public:
+
     std::string name;
     int healthPoints;
     int attackPoints;
     int level;
 
-public:
-Enemy() : name("Default"), healthPoints(100), attackPoints(10), level(1) {}
+    Enemy(std::string enemy_name, int enemy_healthPoints, int enemy_attackPoints, int enemy_level){
+        name = std::move(enemy_name);
+        healthPoints = enemy_healthPoints;
+        attackPoints = enemy_attackPoints;
+        level = enemy_level;
+    }
 
     //Function for enemy attacking.
     void enemyAttack();
