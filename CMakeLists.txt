@@ -17,8 +17,6 @@ add_executable(Aslona main.cpp
         Entities/Player/Player.h
         Entities/Enemy/Enemy.cpp
         Entities/Enemy/Enemy.h
-        Entities/Inventory/Inventory.cpp
-        Entities/Inventory/Inventory.h
         Entities/Item/Item.cpp
         Entities/Item/Item.h
         Entities/NPC/NPCtemplate.cpp

@@ -6,17 +6,25 @@
 
 #include <iostream>
 
-#include "../Inventory/Inventory.h"
-
-void addItem(std::string item){
-
-    std::string Item = "item";
-
-}
-
 void Player::playerAttack(){
     std::cout << "You attack the enemy foe!" << std::endl;
 }
+
+void Player::playerBlock(){
+    std::cout << "You block the enemy's attack!" << std::endl;
+}
+
+void Player::playerFlee(){
+    std::cout << "You fled from the enemy foe!" << std::endl;
+}
+
+int Player::calculatePlayerDamage(int playerWeaponDamage, int playerLevel){
+
+    int player_damage = playerWeaponDamage + playerLevel;
+    return player_damage;
+}
+
+
 
 void Player::playerDefeated(){
     std::cout << "You have been defeated!" << std::endl;

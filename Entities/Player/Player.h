@@ -24,6 +24,12 @@ public:
     //Function for the player is attacking.
     void playerAttack();
 
+    // Method for when the player blocks.
+    void playerBlock();
+
+    // Method for when the player tries to flee.
+    void playerFlee();
+
     //Function for when the player is  defeated. AKA health below or at 0.
     void playerDefeated();
 

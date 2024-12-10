@@ -60,8 +60,7 @@
 				12,
 				14,
 				16,
-				18,
-				20
+				18
 			]
 		}
 	],
@@ -105,8 +104,7 @@
 				12,
 				14,
 				16,
-				18,
-				20
+				18
 			]
 		},
 		{
@@ -120,8 +118,7 @@
 				13,
 				15,
 				17,
-				19,
-				21
+				19
 			]
 		}
 	],
@@ -204,17 +201,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "Entities/Enemy/Enemy.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Entities/Inventory/Inventory.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Entities/Inventory/Inventory.h",
 			"sourceGroupIndex" : 1
 		},
 		{

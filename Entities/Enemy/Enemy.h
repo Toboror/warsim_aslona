@@ -8,6 +8,8 @@
 #include <iostream>
 #include <utility>
 
+class Player;
+
 class Enemy {
 
 
@@ -24,6 +26,12 @@ public:
         attackPoints = enemy_attackPoints;
         level = enemy_level;
     }
+
+    // Method for fighting the enemy.
+    void enemyFight(Enemy enemy, Player player);
+
+    // Method for encountering an enemy.
+    void enemyEncounter(Enemy enemy, Player player);
 
     //Function for enemy attacking.
     void enemyAttack();

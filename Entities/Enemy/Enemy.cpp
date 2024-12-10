@@ -7,6 +7,65 @@
 #include <unordered_map>
 
 #include "../Item/Item.h"
+#include "../Player/Player.h"
+
+/*
+ * Method for when the player encounters an enemy.
+ * Takes in which enemy it is as a parameter.
+ */
+void Enemy::enemyEncounter(Enemy enemy, Player player){
+
+    // Tells the player which enemy it is and which level. Furthermore prompts the player on what to do next.
+    std::cout << "You have encountered a level " << enemy.level << " "
+    << enemy.name << "!" << "\nWhat will you do?" << std::endl;
+
+    std::cout << "1. Engage" << "\n2. Flee" << std::endl;
+
+    int user_input = NULL;
+    std::cin >> user_input;
+
+    switch (user_input) {
+        case 1:
+            std::cout << "You chose to engage the " << enemy.name << std::endl;
+        enemy.enemyFight(enemy, player);
+        break;
+        case 2:
+            std::cout << "You chose to flee from the " << enemy.name << std::endl;
+        break;
+        default:
+            std::cout << "You have to choose between one of the listed options." << std::endl;
+        break;
+    }
+}
+
+void Enemy::enemyFight(Enemy enemy, Player player){
+
+    while (enemy.healthPoints > 0 && player.health > 0) {
+        std::cout << "It is your turn first. What do you want to do?" <<
+            "\n1. Attack the enemy." <<
+                "\n2. Block" <<
+                    "\n3. Try to flee." << std::endl;
+
+        int user_input = NULL;
+        std::cin >> user_input;
+
+        switch (user_input) {
+        case 1:
+            player.playerAttack();
+            break;
+        case 2:
+            player.playerBlock();
+            break;
+        case 3:
+            player.playerFlee();
+            break;
+        default:
+            std::cout << "You must choose one of the specified options." << std::endl;
+            break;
+        }
+    }
+
+}
 
 /*Method for when enemy is defeated.
  *Currently only prints defeated message with the enemy name.
@@ -53,9 +112,10 @@ int Enemy::calculateEnemyDamage(int enemyAttackPoints, int enemyLevel){
  */
 std::string Enemy::enemyDropTable(){
 
+    // Seed the random number generator to ensure different results each run
+    srand(static_cast<unsigned>(time(0)));
+
     /*
-     * TODO
-     * Currently the loot table always drops common sword.
      * It is supposed to generate a random number, and then return
      * the corresponding string from the HashMap.
      */
@@ -74,13 +134,9 @@ std::string Enemy::enemyDropTable(){
 
     int randomNum = rand() % 31; // Generate a random number between 0 and 30
 
-    auto it = enemyLoot.find(randomNum);
-    if (it != enemyLoot.end()) {
-        lootToBeDropped = it->second;
-    } else {
-        lootToBeDropped = "No loot"; // Default case if no loot is found
-    }
+    std::cout << "The random number is: " << randomNum << std::endl;
+    std::cout << "You got a " << enemyLoot.at(randomNum) << std::endl;
 
-    std::cout << "You got a " << lootToBeDropped << std::endl;
-    return lootToBeDropped;
+    return enemyLoot.at(randomNum);
+
 }
